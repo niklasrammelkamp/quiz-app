@@ -21,34 +21,58 @@ body {
 
 button {
   font-family: "poppins";
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
 }
 
 main {
   width: 90%;
 }
 
-/* --------------------  HEADER ---------------------*/
+/* --------------------  NAV ---------------------*/
 
 nav {
-  background-color: aliceblue;
-  width: 95%;
+  background-color: rgb(255 255 255);
+  width: 100%;
   display: flex;
-  border-radius: 50px;
-  justify-content: space-around;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-evenly;
   align-content: center;
-  padding: 15px 0;
+  padding: 15px 0 20px 0;
   position: fixed;
-  bottom: 18px;
+  bottom: 0;
   z-index: 100;
+  box-shadow: 0 0 30px rgb(124, 109, 246, 20%);
+}
+
+nav a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .nav_button {
   width: 50px;
   height: 30px;
-  fill: rgb(124, 109, 246);
+  fill: rgb(193, 203, 231);
 }
 
-nav .home {
+.nav_home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_home img {
+  position: absolute;
+  width: 70px;
+  bottom: -13px;
+}
+
+.nav_home .home {
   fill: rgb(222, 251, 142);
 }
 
@@ -102,6 +126,7 @@ header svg {
   padding: 0;
   font-size: 0.8em;
   margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 
 .category {
@@ -114,20 +139,30 @@ header svg {
   content: "#";
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 button[type="show"] {
-  border: 1px solid #292929;
-  background-color: white;
+  border: none;
+  background-color: rgb(222, 251, 142);
   padding: 12px 24px;
+  width: 100%;
   border-radius: 50px;
+}
+
+.bookmark {
+  display: flex;
 }
 
 .question_block svg {
   stroke: rgb(124, 109, 246);
   stroke-width: 25;
   stroke-miterlimit: 10;
-  width: 50px;
-  position: absolute;
-  top: -10px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
   fill: rgb(124, 109, 246);
-  right: 15px;
 }
