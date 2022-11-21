@@ -96,8 +96,6 @@ header svg {
   fill: rgb(222, 251, 142);
   position: absolute;
   bottom: 3px;
-  width: 170px;
-  height: 40px;
   transform: rotate(4deg);
 }
 
