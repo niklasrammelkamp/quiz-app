@@ -1,0 +1,9 @@
+.about p {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.about p span {
+  font-weight: 400;
+  padding: 0 0 0 12px;
+}

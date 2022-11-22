@@ -1,0 +1,16 @@
+.profil {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.profil img {
+  width: 40%;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.profil .name {
+  margin: 0;
+  font-weight: 700;
+}
