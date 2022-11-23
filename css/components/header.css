@@ -1,0 +1,20 @@
+header {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  /* color: rgb(124, 109, 246); */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-weight: 500;
+  z-index: 50;
+}
+
+header svg {
+  fill: var(--secondary-color);
+  position: absolute;
+  bottom: 3px;
+  transform: rotate(4deg);
+}
