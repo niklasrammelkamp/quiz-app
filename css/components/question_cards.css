@@ -11,7 +11,7 @@
 .question {
   margin: 0;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .categories {
@@ -36,7 +36,7 @@
 
 .buttons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 12px;
 }
 
@@ -47,10 +47,6 @@
   width: 100%;
   border-radius: 50px;
   color: var(--black);
-}
-
-.bookmark {
-  display: flex;
 }
 
 .question_block svg {
