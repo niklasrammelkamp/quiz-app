@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
+    <script src="js/bookmark.js" defer></script>
     <title>super quiz</title>
   </head>
   <body>
@@ -26,6 +26,14 @@
           <path
             d="M200,282c-4.6,0-9.1-1.8-12.5-5.2l-75.7-75.7l-75.1,75.1c-5.1,5.1-12.7,6.6-19.3,3.8c-6.7-2.8-10.9-9.2-10.9-16.4L6.8,43.2
 	c0-20.6,16.8-37.3,37.4-37.3h136.1c20.6,0,37.4,16.8,37.4,37.4v221.1c0,7.2-4.3,13.6-10.9,16.4C204.6,281.6,202.3,282,200,282z"
+          />
+        </svg>
+      </a>
+
+      <a href="pages/profil.html">
+        <svg viewBox="0 0 512 512" class="nav_button">
+          <path
+            d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
           />
         </svg>
       </a>
@@ -62,7 +70,7 @@
         <div class="buttons">
           <button type="button" class="show-content">Show answer</button>
 
-          <button class="bookmark">
+          <button class="bookmark" onclick="toogleButton()">
             <svg viewBox="0 0 250 300">
               <path
                 d="M44.2,18.3h136.1c13.8,0,24.9,11.2,24.9,24.9v221.1c0,4.7-5.6,7-8.9,3.7l-75.7-75.7c-4.8-4.8-12.7-4.8-17.5,0
