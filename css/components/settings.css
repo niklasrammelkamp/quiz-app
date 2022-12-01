@@ -1,0 +1,57 @@
+.settings {
+  padding: 0 20px 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggleButton {
+  width: 70px;
+  height: 40px;
+  background-color: var(--white);
+  border-radius: 50px;
+  /* border: 2px solid var(--primary-color); */
+  position: relative;
+}
+
+.toggleButton--circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: 0.5s ease;
+}
+
+/* .animateCircle {
+  animation: 0.5s circleTransform;
+}
+
+@keyframes circleTransform {
+  0% {
+    transform: scaleY(1);
+  }
+
+  10% {
+    transform: scaleY(0.6);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+} */
+
+.settings p {
+  width: 100px;
+  text-align: center;
+}
+
+.right {
+  margin-left: 30px;
+  left: inherit;
+}
+
+.becomeBold {
+  font-weight: 700;
+}
