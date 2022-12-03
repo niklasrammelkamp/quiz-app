@@ -20,7 +20,6 @@ function addClass() {
 
 toggleButton.addEventListener("click", () => {
   toogleButtonCircle.classList.toggle("right");
-  //   toogleButtonCircle.classList.add("animateCircle");
 
   counter++;
   console.log(counter % 2, counter);
@@ -32,16 +31,3 @@ toggleButton.addEventListener("click", () => {
     addClass();
   }
 });
-
-/*
-toggleButton.addEventListener("click", () => {
-  toogleButtonCircle.classList.toggle("right");
-  toogleButtonCircle.toggleAttribute("disable");
-  console.log(toggleButton.hasAttribute("disable"));
-
-  if (toggleButton.hasAttribute("disable")) {
-    lightParagraph.classList.add("becomeBold");
-    console.log("test");
-  }
-});
-*/
