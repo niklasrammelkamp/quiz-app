@@ -72,18 +72,17 @@ inputTag.addEventListener("input", (event) => {
 //____________________  create new Cards  ______________________
 
 const form = document.querySelector('[data-js="questionForm"]');
-const newCardSection = document.querySelector('[data-js="newCardSection"]');
+const main = document.body.getElementsByTagName("main")[0];
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
 
   const article = document.createElement("article");
   article.classList.add("question_block");
-  newCardSection.append(article);
+  main.append(article);
 
   const question = document.createElement("h2");
   question.classList.add("question");
@@ -101,6 +100,7 @@ form.addEventListener("submit", (event) => {
 
   const answer = document.createElement("p");
   answer.classList.add("answer");
+  answer.classList.add("hiddenAnswer");
   answer.textContent = data.answer;
   article.append(answer);
 

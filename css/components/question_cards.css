@@ -75,4 +75,5 @@
   margin: 0;
   padding: 0;
   fill: white;
+  transition: 0.5s;
 }
