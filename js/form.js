@@ -1,5 +1,7 @@
 console.clear();
 
+//____________________  label Effekte  ______________________
+
 const textareaQuestion = document.getElementById("question");
 const labelQuestion = document.querySelector('[data-js="labelquestion"]');
 
@@ -20,6 +22,54 @@ textareaAnswer.addEventListener("change", () => {
 inputTag.addEventListener("change", () => {
   labelTag.classList.add("stayThere");
 });
+
+//____________________  input Counter ______________________
+
+const questionCharacters = document.querySelector(
+  '[data-js="question-characters"]'
+);
+
+textareaQuestion.addEventListener("input", (event) => {
+  let maxCharacters = 250;
+
+  const inputCharacters = event.target.value.length;
+
+  questionCharacters.textContent = `You have ${
+    maxCharacters - inputCharacters
+  } characters left`;
+});
+
+//------------------
+
+const answerCharacters = document.querySelector(
+  '[data-js="answer-characters"]'
+);
+
+textareaAnswer.addEventListener("input", (event) => {
+  let maxCharacters = 250;
+
+  const inputCharacters = event.target.value.length;
+
+  answerCharacters.textContent = `You have ${
+    maxCharacters - inputCharacters
+  } characters left`;
+});
+
+//------------------
+
+const tagCharacters = document.querySelector('[data-js="tag-characters"]');
+
+inputTag.addEventListener("input", (event) => {
+  let maxCharacters = 50;
+
+  const inputCharacters = event.target.value.length;
+
+  tagCharacters.textContent = `You have ${
+    maxCharacters - inputCharacters
+  } characters left`;
+});
+
+//____________________  create new Cards  ______________________
 
 const form = document.querySelector('[data-js="questionForm"]');
 const newCardSection = document.querySelector('[data-js="newCardSection"]');
