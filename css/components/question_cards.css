@@ -12,6 +12,7 @@
   margin: 0;
   font-weight: 400;
   font-size: 1.2em;
+  margin-bottom: 16px;
 }
 
 .categories {
@@ -20,8 +21,9 @@
   gap: 12px;
   padding: 0;
   font-size: 0.8em;
-  margin-bottom: 32px;
   flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .category {
@@ -32,6 +34,12 @@
 
 .category::before {
   content: "#";
+}
+
+.answer {
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .buttons {
