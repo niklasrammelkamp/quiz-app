@@ -1,8 +1,12 @@
 console.clear();
 
-export function giveShowHideButtonsEventListener(buttons) {
+const buttons = document.querySelectorAll('[data-js="show-content"]');
+function giveShowHideButtonsEventListener(buttons) {
+  console.log(buttons);
   for (const element of buttons) {
     element.addEventListener("click", (event) => {
+      console.log(event);
+
       const answer = event.path[2].querySelector('[data-js="answer"]');
 
       answer.classList.toggle("hiddenAnswer");
@@ -18,6 +22,8 @@ export function giveShowHideButtonsEventListener(buttons) {
     });
   }
 }
+
+giveShowHideButtonsEventListener(buttons);
 
 //____________________BOOKMARK BUTTONS____________________
 

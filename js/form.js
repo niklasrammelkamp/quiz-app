@@ -11,17 +11,38 @@ const labelAnswer = document.querySelector('[data-js="labelanswer"]');
 const inputTag = document.getElementById("tag");
 const labelTag = document.querySelector('[data-js="labeltag"]');
 
-textareaQuestion.addEventListener("change", () => {
-  labelQuestion.classList.add("stayThere");
-});
+export const dumm = 100;
 
-textareaAnswer.addEventListener("change", () => {
-  labelAnswer.classList.add("stayThere");
-});
+formLabelEffekt(
+  textareaQuestion,
+  labelQuestion,
+  textareaAnswer,
+  labelAnswer,
+  inputTag,
+  labelTag
+);
 
-inputTag.addEventListener("change", () => {
-  labelTag.classList.add("stayThere");
-});
+function formLabelEffekt(
+  textareaQuestion,
+  labelQuestion,
+  textareaAnswer,
+  labelAnswer,
+  inputTag,
+  labelTag
+) {
+  console.log("haaaaalllooooo");
+  textareaQuestion.addEventListener("change", () => {
+    labelQuestion.classList.add("stayThere");
+  });
+
+  textareaAnswer.addEventListener("change", () => {
+    labelAnswer.classList.add("stayThere");
+  });
+
+  inputTag.addEventListener("change", () => {
+    labelTag.classList.add("stayThere");
+  });
+}
 
 //____________________  input Counter ______________________
 
@@ -38,7 +59,7 @@ textareaQuestion.addEventListener("input", (event) => {
     maxCharacters - inputCharacters
   } characters left`;
 });
-
+console.log("dkjhfgdsazfgikfgkdfsglisfdgvlidsflisudfgfligfli");
 //------------------
 
 const answerCharacters = document.querySelector(
