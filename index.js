@@ -1,4 +1,6 @@
-import { dumm } from "./js/form.js";
+import {} from "./js/buttons.js";
+import {} from "./js/form.js";
+
 //import { giveShowHideButtonsEventListener } from "./js/buttons.js";
 
 // const buttons = document.querySelectorAll('[data-js="show-content"]');

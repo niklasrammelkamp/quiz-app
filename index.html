@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="./js/buttons.js" type="module" defer></script>
+    <script src="./index.js" type="module" defer></script>
     <title>super quiz</title>
   </head>
   <body>
@@ -104,7 +104,9 @@
         </p>
 
         <div class="buttons">
-          <button type="button" class="show-content">Show answer</button>
+          <button type="button" class="show-content" data-js="show-content">
+            Show answer
+          </button>
 
           <button data-js="bookmarkButton">
             <svg viewBox="0 0 250 300">
@@ -136,7 +138,9 @@
         </p>
 
         <div class="buttons">
-          <button type="button" class="show-content">Hide answer</button>
+          <button type="button" class="show-content" data-js="show-content">
+            Show answer
+          </button>
 
           <button data-js="bookmarkButton">
             <svg viewBox="0 0 250 300">

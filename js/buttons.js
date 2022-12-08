@@ -1,6 +1,13 @@
 console.clear();
 
 const buttons = document.querySelectorAll('[data-js="show-content"]');
+
+const answers = document.querySelectorAll('[data-js="answer"]');
+
+console.log(buttons);
+
+console.log(answers);
+/*
 function giveShowHideButtonsEventListener(buttons) {
   console.log(buttons);
   for (const element of buttons) {
@@ -43,3 +50,4 @@ for (const element of bookmarkButtons) {
     }
   });
 }
+*/
