@@ -1,5 +1,8 @@
-import { giveShowHideButtonsEventListener } from "./js/buttons.js";
+import { createQuestionCard } from "./js/questioncard.js";
+import { questionCards } from "./js/dataBase.js";
 
-const buttons = document.querySelectorAll('[class="show-content"]');
-console.log("test");
-giveShowHideButtonsEventListener(buttons);
+const main = document.querySelector('[data-js="main"]');
+
+questionCards.forEach((card) => {
+  createQuestionCard(main, card);
+});
