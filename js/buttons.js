@@ -1,53 +1,32 @@
 console.clear();
 
-const buttons = document.querySelectorAll('[data-js="show-content"]');
+// const buttons = document.querySelectorAll('[data-js="show-content"]');
 
-const answers = document.querySelectorAll('[data-js="answer"]');
+// const answers = document.querySelectorAll('[data-js="answer"]');
 
-console.log(buttons);
+// console.log(buttons);
 
-console.log(answers);
-/*
-function giveShowHideButtonsEventListener(buttons) {
-  console.log(buttons);
-  for (const element of buttons) {
-    element.addEventListener("click", (event) => {
-      console.log(event);
+// console.log(answers);
 
-      const answer = event.path[2].querySelector('[data-js="answer"]');
-
-      answer.classList.toggle("hiddenAnswer");
-
-      if (element.textContent.includes("Show answer")) {
-        element.textContent = "Hide answer";
-        return;
-      }
-      if (element.textContent.includes("Hide answer")) {
-        element.textContent = "Show answer";
-        return;
-      }
-    });
-  }
+export function addEventListenerToButton(buttonElement, answerElement) {
+  buttonElement.addEventListener("click", () => {
+    answerElement.classList.toggle("hiddenAnswer");
+  });
 }
-
-giveShowHideButtonsEventListener(buttons);
 
 //____________________BOOKMARK BUTTONS____________________
 
-const bookmarkButtons = document.querySelectorAll('[data-js="bookmarkButton"]');
+//const bookmarkButtons = document.querySelectorAll('[data-js="bookmarkButton"]');
 
-for (const element of bookmarkButtons) {
-  element.addEventListener("click", () => {
-    const svg = element.getElementsByTagName("svg")[0];
-
-    if (svg.style.fill.includes("var(--primary-color)")) {
-      svg.style.fill = "";
+export function addEventListenerToBookmark(bookmark) {
+  bookmark.addEventListener("click", () => {
+    if (bookmark.style.fill.includes("var(--primary-color)")) {
+      bookmark.style.fill = "";
       return;
     }
-    if (svg.style.fill.includes("")) {
-      svg.style.fill = "var(--primary-color)";
+    if (bookmark.style.fill.includes("")) {
+      bookmark.style.fill = "var(--primary-color)";
       return;
     }
   });
 }
-*/
