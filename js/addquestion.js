@@ -40,8 +40,7 @@ if (textareaQuestion != null) {
      characters left`;
   }
 
-  //----------------- QUESTION FIELD
-
+  //--- QUESTION FIELD
   const questionCharacters = document.querySelector(
     '[data-js="question-characters"]'
   );
@@ -57,8 +56,7 @@ if (textareaQuestion != null) {
     );
   });
 
-  //------------------ ANSWER FIELD
-
+  //--- ANSWER FIELD
   const answerCharacters = document.querySelector(
     '[data-js="answer-characters"]'
   );
@@ -74,8 +72,7 @@ if (textareaQuestion != null) {
     );
   });
 
-  //------------------ TAG FIELD
-
+  //--- TAG FIELD
   const tagCharacters = document.querySelector('[data-js="tag-characters"]');
   let maxCharactersTag = 50;
 
