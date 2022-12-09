@@ -1,12 +1,6 @@
 console.clear();
 
-// const buttons = document.querySelectorAll('[data-js="show-content"]');
-
-// const answers = document.querySelectorAll('[data-js="answer"]');
-
-// console.log(buttons);
-
-// console.log(answers);
+//____________________SHOW/HIDE BUTTON____________________
 
 export function addEventListenerToButton(buttonElement, answerElement) {
   buttonElement.addEventListener("click", () => {
@@ -14,9 +8,7 @@ export function addEventListenerToButton(buttonElement, answerElement) {
   });
 }
 
-//____________________BOOKMARK BUTTONS____________________
-
-//const bookmarkButtons = document.querySelectorAll('[data-js="bookmarkButton"]');
+//____________________BOOKMARK BUTTON____________________
 
 export function addEventListenerToBookmark(bookmark) {
   bookmark.addEventListener("click", () => {

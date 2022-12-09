@@ -1,6 +1,8 @@
 import { createQuestionCard } from "./js/questioncard.js";
-//import {} from "./js/buttons.js";
+import { questionCards } from "./js/dataBase.js";
 
 const main = document.querySelector('[data-js="main"]');
 
-createQuestionCard(main, "LoremIpsum", "Peter", "lorem");
+questionCards.forEach((card) => {
+  createQuestionCard(main, card);
+});
